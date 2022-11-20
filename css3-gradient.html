@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gradient CSS3">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Muhamad Helmi Adhfandi">
+    <title>Belajar Warna Gradient CSS3</title>
+    <style>
+        body {
+            font-family: Calibri;
+            background-color: aquamarine;
+        }
+        
+        .kotak {
+            width: 500px;
+            height: 250px;
+            background-color: white;
+            margin: 30px;
+            float: left;
+        }
+
+        .gradient1 {
+            background: linear-gradient(pink, rgb(236, 134, 151), rgb(206, 89, 109), purple);
+        }
+
+        .gradient2 {
+            background: linear-gradient(to right, red, orange, yellow, rgb(226, 231, 143), rgb(253, 252, 211));
+        }
+
+        .gradient3 {
+            background: radial-gradient(blue, rgb(58, 129, 229), rgb(84, 207, 255));
+        }
+
+        .gradient4 {
+            background: radial-gradient(circle, rgb(30, 128, 0), rgb(91, 209, 55), rgb(149, 255, 117));
+        }
+
+        .gradient5 {
+            background: linear-gradient(to bottom left,rgba(0, 128, 0, 0.466),rgba(0, 0, 255, 0.47),rgba(76, 0, 130, 0.616),rgba(238, 130, 238, 0.502));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Liner Gradient -->
+        <div class="kotak gradient1">
+            <p>
+                The orca or killer whale (Orcinus orca) is a toothed 
+                whale belonging to the oceanic dolphin family, of which
+                it is the largest member.
+            </p>
+        </div>
+        <div class="kotak gradient2"></div>
+        <div class="kotak gradient5"></div>
+
+        <!-- Radial Gradient -->
+        <div class="kotak gradient3"></div>
+        <div class="kotak gradient4"></div>
+    </div>
+</body>
+</html>

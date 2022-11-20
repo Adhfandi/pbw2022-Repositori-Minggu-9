@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 3 Transition">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Muhamad Helmi Adhfandi">
+    <title>Belajar CSS 3 Transition</title>
+    <style>
+        body {
+            font-family: Calibri;
+        }
+
+        .kotak {
+            background: bisque;
+            width: 100px;
+            height: 50px;
+            transition: width 1s;
+            margin: 20px;
+        }
+
+        .kotak:hover{
+            width: 200px;
+        }
+
+        .kotak2{
+            background: bisque;
+            width: 100px;
+            height: 50px;
+            transition: width 0.5s, height 1.5s;
+            margin: 20px;
+        }
+
+        .kotak2:hover{
+            width: 200px;
+            height: 300px;
+        }
+
+        .kotak3 {
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+            background: bisque;
+            transition: width 1s;
+            transition-delay: 0.5s;
+            background: linear-gradient(to right, red, orange, yellow, rgb(226, 231, 143), rgb(253, 252, 211));
+        }
+
+        .kotak3:hover {
+            width: 250px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak">Kotak 1</div>
+    <div class="kotak2">Kotak 2</div>
+    <div class="kotak3">Kotak 3</div>
+</body>
+</html>
